@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <center><title>Le Cellule Animale (Eurycote)</title></center>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="Website Icon.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js" defer></script>
+    <link href="styles.css" rel="stylesheet">
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'fr',
+                includedLanguages: 'en,fr,es,zh-CN,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <style>
+        .background-svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        body {
+            font: serif;
+            color: #e0e0e0;
+            background: #121212;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-gadget-icon {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
+    </style>
+    
+    <script>
+        function myfunction() {
+            var currentdate = new Date();
+            alert("Today is " + currentdate);
+        }
+    </script>
   </head>
   <body>
-      
+    <div id="google_translate_element" style="float: right; margin-bottom: 10px;"></div>
+
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Page d'Accueil</li>
+        <li data-tab-target="#about" class="tab">À Propos</li>
+        <li data-tab-target="#reading" class="tab">Lecture</li>
+        <li data-tab-target="#grammar" class="tab">Grammaire</li>
+        <li data-tab-target="#listen" class="tab">Audio</li>
+    </ul>
+
+    <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600">
+        <defs>
+            <pattern id="rectPattern" patternUnits="userSpaceOnUse" width="1" height="1">
+                <rect x="0" y="0" width="10000" height="10000" fill="#FFFFFFFF" />
+                <rect x="50" y="50" width="10000" height="10000" fill="#FFFFFFFF" />
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#rectPattern)" />
+    </svg>
+
+    <div class="container">
+        <div class="content">
+            <audio controls style="width: 120px; height: 10px;">
+                <source src="LP.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <div class="tab-content">
+                <div id="home" data-tab-content class="active">
+                    <div class="center">
+                        <div class="header-container">
+                            <h2 onclick="myfunction()">Les Ressources Francais</h2>
+                        </div>
+                        <p>Par Ruilin Li</p>
+                    </div>
+                </div>
+                <div id="about" data-tab-content>
+                    <center><b><br>Bonjour tout le monde, je m'appelle Ruilin Li! Aujourd'hui, je suis ici pour vous donnez beaucoup des ressources francaises de lecture, pour la <br><br>grammaire, et pour l'ecoute. Presque la moitie de les ressources besoin ton Gmail pour le sauver tes historiques de la site Web.</b><br><br></center>
+                    <center><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fca%2Flisting%2F1195731269%2Feiffel-tower-paris-france-black-white&psig=AOvVaw3fcLDfQXQsOB2FHX6X2Sm9&ust=1749080170029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi7hcS11o0DFQAAAAAdAAAAABAE" width="200px" height="180px" alt="Tour Eiffel"></center>
+                </div>
+                <div id="reading" data-tab-content>
+                    <b><br>Les Ressources de Francais pour la Lecture:</b><br><br>
+                    <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/sport-et-defis">
+                        <p>Bibliotheque des Ameriques: Les Sports et Defis</p>
+                    </a>
+                    <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/journee-internationale-du-livre-pour-enfant">
+                        <p>Bibliotheque des Ameriques: Les Journee Internationale</p>
+                    </a>
+                    <a href="https://www.bibliothequedesameriques.com/selections/selection-thematique/vive-les-vacances">
+                        <p>Bibliotheque des Ameriques: Les Vacances</p>
+                    </a>
+                    <a href="https://bonjourbooksdc.com/collections/french-immersion-grades-6-8">
+                        <p>Bonjour Books: FI Grades 6 - 8</p>
+                    </a>
+                    <a href="https://bonjourbooksdc.com/collections/graphic-novels-for-ages-9-12">
+                        <p>Bonjour Books: Graphic Novels 9 - 12</p>
+                    </a>
+                    <a href="https://bonjourbooksdc.com/collections/graphic-novels-recommended-for-teens">
+                        <p>Bonjour Books: Graphic Novels Teens</p>
+                    </a>
+                    <a href="https://bonjourbooksdc.com/collections/popular-series-series-populaires">
+                        <p>Bonjour Books: Popular Series</p>
+                    </a>
+                </div>
+
+                <div id="grammar" data-tab-content>
+                    <b><br>Les Ressources de Francais pour la Grammaire:</b><br><br>
+                    <a href="https://conjuguemos.com/activities/french/grammar/1">
+                        <p>Activites de Conjugemos</p>
+                    </a>
+                    <a href="https://www.laits.utexas.edu/tex/gr/index.html">
+                        <p>University of Texas Exercises</p>
+                    </a>
+                    <a href="https://www.fel.gouv.qc.ca/bnqex/">
+                        <p>Government of Quebec Exercises</p>
+                    </a>
+                    <a href="https://apprendre.tv5monde.com/en/collection-all">
+                        <p>TV5 Monde Exercises</p>
+                    </a>
+                </div>
+
+                <div id="listen" data-tab-content>
+                    <b><br>Les Ressources de Francais pour l'Écoute:</b><br><br>
+                    <a href="https://ici.radio-canada.ca/ohdio/categories/1003592/jeunesse">
+                        <p>Radio Canada Ohdio</p>
+                    </a>
+                    <a href="https://www.hoopladigital.com/my/hoopla">
+                        <p>Entend Hoopla</p>
+                    </a>
+                    <a href="https://libbyapp.com/shelf">
+                        <p>Entend Libby</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
-</html>
